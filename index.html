@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Appointment Management App</title>
+    <link rel="icon" type="image/x-icon" href="images/appointment.png" />
+    <!-- Javascript file-->
+    <!-- <script defer src="script.js"></script> -->
+  </head>
+  <body>
+    <div class="overlay hidden"></div>
+    <!---Welcome Message-->
+    <div class="welcome">
+      <img src="images/appointment.png" alt="logo" class="logo" />
+      <p class="welcomeMsg">Welcome to the Appointment Management System</p>
+    </div>
+    <main class="app">
+      <!--Summary Count-->
+      <!-- <div class="summary">
+        <div>
+            <p class="summaryMsg">There are <span class="appt-Count"> 3 </span> appointments coming up</p>
+        </div>
+    </div> -->
+    <div class="modal hidden">
+      <!-- close button icon -->
+      <button class="close-modal">&times;</button>
+      <h1>Deleted Appointment</h1>
+      <p class="deleteMsg">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+      </p>
+    </div>
+      <!-- Appointment List -->
+      <div class="appointments">
+        <div class="appointments-row">
+          <button data-id="1" class="delete">❌</button>
+          <button class="appointments-btn-edit">✏️</button>
+          <div class="appointments-type">Dentist</div>
+          <div class="appointments-date">12/04/2024</div>
+          <div class="appointments-time">12:00pm CST</div>
+          <div class="appointments-location">
+            1234 S Drexel Ave Chicago,IL 60637
+          </div>
+        </div>
+        <div class="appointments-row">
+          <button  data-id="2" class="delete">❌</button>
+          <!-- <button class="appointments-btn-edit">✏️</button> -->
+          <div class="appointments-type">Therapy</div>
+          <div class="appointments-date">12/15/2024</div>
+          <div class="appointments-time">1:00pm CST</div>
+          <div class="appointments-location">
+            432 S Dearborn Ave Chicago,IL 60627
+          </div>
+        </div>
+      </div>
+
+      <!-- Appointment Form -->
+      <div class="appointment-form">
+        <h2 class="appointment-form-header">Enter an appointment</h2>
+        <form class="form">
+          <input type="text" class="form-input form-input-type" />
+          <input type="datetime-local" class="form-input form-input-date" />
+          <!-- <input type="time" class="form-input form-input-time" /> -->
+          <input type="text" class="form-input form-input-location" />
+          <button class="form-btn">&rarr;</button>
+          <label class="form-label form-label-type">Type</label>
+          <label class="form-label form-label-date">Date and Time</label>
+          <!-- <label class="form-label form-label-time">Time</label> -->
+          <label class="form-label form-label-loc">Location</label>
+        </form>
+      </div>
+
+      <!-- Appointment Timer -->
+      <div class="timeWrapper">
+        <p class="appointment-timer">
+          Your next appointment is in <span class="days">5</span> days</p>
+          <button class="sort-btn">Sort &#8595</button>
+      </div>
+
+    </main>
+    <footer>&copy; by Opeyemi Animashaun :)</footer>
+
+        <!-- Javascript file-->
+    <script  src="script.js"></script>
+  </body>
+</html>
